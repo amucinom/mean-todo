@@ -1,0 +1,18 @@
+{
+	"name": "mean-todo",
+	"version": "0.0.0",
+	"description": "Simple todo application. Originally a tutorial from Scotch.io",
+	"main": "server.js",
+	"author": "Aldo Mucino",
+	"dependencies": {
+		"browser-sync": "^2.12.5",
+		"gulp": "^3.9.1",
+		"gulp-server-livereload": "^1.7.3",
+		"gulp-watch": "^4.3.5",
+		"body-parser": "^1.4.3",
+    	"express": "^4.13.4",
+    	"method-override": "^2.1.3",
+    	"mongoose": "^4.4.12",
+    	"morgan": "^1.1.1"
+	}
+}
