@@ -78,6 +78,11 @@ app.post('/api/todos', function (req, res) {
         });
     });
 
+	// application
+	app.get('*', function (req, res) {
+		res.sendfile('./public/index.html');
+	});
+
 	// listen
 	app.listen(port);
 	console.log('App listening on port ' + port);
