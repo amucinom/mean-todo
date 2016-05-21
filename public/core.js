@@ -1,6 +1,6 @@
 (function() {
 	var todoapp = angular.module('scotchTodo', []);
-	todoapp.controller('mainController', function ($scope, $http) {
+	todoapp.controller('mainController',['$scope', '$http', function ($scope, $http) {
 		$scope.formData = {};
 
 		// when landing on the page, get all todos and show them
@@ -37,5 +37,5 @@
 					console.log('Error: ' + data);
 				});
 		};
-	});
+	}]);
 })();

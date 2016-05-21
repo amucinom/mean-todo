@@ -8,8 +8,7 @@ var methodOverride = require('method-override'); // simulate DELETE an PUT
 var port = 8000;
 
 // configuration
-
-mongoose.connect('mongodb://node:nodeuser@mongo.onmodulus.net:27017/uw03mypu'); // connect to db on modulus
+mongoose.connect('localhost/test');
 
 app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img
 app.use(morgan('dev')); // log every request to the console
@@ -79,8 +78,8 @@ app.post('/api/todos', function (req, res) {
     });
 
 	// application
-	app.get('*', function (req, res) {
-		res.sendfile('./public/index.html');
+	app.get('', function (req, res) {
+		res.sendFile('./public/index.html');
 	});
 
 	// listen
